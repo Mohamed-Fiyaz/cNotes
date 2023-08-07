@@ -13,7 +13,7 @@ int main() {
     return 0;
 }
 
- #include<stdio.h>
+#include<stdio.h>
 struct product{
     char brand[30];
     char product_name[30];
@@ -35,6 +35,7 @@ int main(){
 
     return 0;
 }
+
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
@@ -170,4 +171,31 @@ int main() {
     }
     return 0;
 }
+
+#include<stdio.h>
+struct student{
+    char name[40];
+    int roll;
+    float CPI;
+    int backlog;
+};
+
+int main(){
+    struct student student1;
+    printf("Enter Student Name: ");
+    scanf("%s", student1.name);
+    printf("Enter Student Roll Number: ");
+    scanf("%d", &student1.roll);
+    printf("Enter Student CPI: ");
+    scanf("%f", &student1.CPI);
+    printf("Enter Student Backlog: ");
+    scanf("%d", &student1.backlog);
+    printf("\nStudent using simple structure variable.\n");
+    printf("Student name: %s\n", student1.name);
+    printf("STudent Enrollment:5d\n", student1.roll);
+    printf("Student CPI: %.2f\n", student1.CPI);
+    printf("Student backlog %i\n", student1.backlog);
+    return 0;
+}
 */
+
