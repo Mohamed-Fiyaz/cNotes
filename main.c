@@ -197,5 +197,67 @@ int main(){
     printf("Student backlog %i\n", student1.backlog);
     return 0;
 }
-*/
 
+#include<stdio.h>
+#include<stdlib.h>
+
+int main() {
+    int r, c;
+    printf("Enter the number of rows: ");
+    scanf("%d", &r);
+    printf("Enter the number of columns: ");
+    scanf("%d", &c);
+
+    // Allocate memory for matrices a, b, and mul
+    int **a = (int **)malloc(r * sizeof(int *));
+    int **b = (int **)malloc(r * sizeof(int *));
+    int **mul = (int **)malloc(r * sizeof(int *));
+    for (int i = 0; i < r; i++) {
+        a[i] = (int *)malloc(c * sizeof(int));
+        b[i] = (int *)malloc(c * sizeof(int));
+        mul[i] = (int *)malloc(c * sizeof(int));
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("Enter the elements for a[%d][%d]: ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            printf("Enter the elements for b[%d][%d]: ", i, j);
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            mul[i][j]=0;
+            for (int k = 0; k < c; k++) {
+                mul[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("%d ",mul[i][j]);
+        }
+        printf("\n");
+    }
+
+    // Free dynamically allocated memory
+    for (int i = 0; i < r; i++) {
+        free(a[i]);
+        free(b[i]);
+        free(mul[i]);
+    }
+    free(a);
+    free(b);
+    free(mul);
+
+    return 0;
+}
+*/
