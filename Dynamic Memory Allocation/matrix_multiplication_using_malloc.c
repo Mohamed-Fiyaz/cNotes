@@ -17,13 +17,13 @@ int main(){
     }
     for(i=0;i<r;i++){
         for(j=0;j<c;j++){
-            printf("Enter [%d][%d]",i,j);
+            printf("Enter [%d][%d]: ",i,j);
             scanf("%d",&a[i][j]);
         }
     }
     for(i=0;i<r;i++){
         for(j=0;j<c;j++){
-            printf("Enter [%d][%d]",i,j);
+            printf("Enter [%d][%d]: ",i,j);
             scanf("%d",&b[i][j]);
         }
     }
