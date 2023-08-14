@@ -50,12 +50,3 @@ int main(){
     free(mul);
     return 0;
 }
-
-#include<stdio.h>
-struct student{
-    char name[20];
-    int age;
-    int phyM;
-    int chemM;
-    int mathM;
-};
