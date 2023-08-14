@@ -1,4 +1,4 @@
-//swapping two numbers
+//swapping two numbers using pointers
 #include <stdio.h>
 void swap(int *x, int *y) {
     int temp = *x;
