@@ -16,7 +16,7 @@ add_executable(structures-04 Structures/structures-04.c)
 add_executable(structures-05 Structures/structures-05.c)
 add_executable(structures-06 Structures/structures-06.c)
 
-add_executable(matrix_multiplication "Dynamic Memory Allocation/matrix_multiplication_using_malloc.c")
+add_executable(matrix_multiplication_using_malloc "Dynamic Memory Allocation/matrix_multiplication_using_malloc.c")
 add_executable(memory_allocation-01 "Dynamic Memory Allocation/memory_allocation-01.c")
 add_executable(memory_allocation-02 "Dynamic Memory Allocation/memory_allocation-02.c")
 add_executable(memory_allocation-03 "Dynamic Memory Allocation/memory_allocation-03.c")
