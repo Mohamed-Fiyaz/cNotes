@@ -4,7 +4,7 @@ project(cNotes C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(array_manager Basics/array_manager.c)
-add_executable(CreationAndTraversal "Linked List/CreationAndTraversal.c")
+
 add_executable(fibonacci Basics/fibonacci.c)
 add_executable(matrix_addition Basics/matrix_addition.c)
 add_executable(matrix_multiplication Basics/matrix_multiplication.c)
@@ -23,6 +23,7 @@ add_executable(memory_allocation-01 "Dynamic Memory Allocation/memory_allocation
 add_executable(memory_allocation-02 "Dynamic Memory Allocation/memory_allocation-02.c")
 add_executable(memory_allocation-03 "Dynamic Memory Allocation/memory_allocation-03.c")
 
-
+add_executable(singlyLinkedList "Linked List/singlyLinkedList.c")
+add_executable(doublyLinkedList "Linked List/doublyLinkedList.c")
 
 
