@@ -25,5 +25,6 @@ add_executable(memory_allocation-03 "Dynamic Memory Allocation/memory_allocation
 
 add_executable(singlyLinkedList "Linked List/singlyLinkedList.c")
 add_executable(doublyLinkedList "Linked List/doublyLinkedList.c")
+add_executable(circularLinkedList "Linked List/circularLinkedList.c")
 
 
