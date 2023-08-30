@@ -1,4 +1,4 @@
-// Circular Linked list
+// Circular Linked List
 
 #include<stdio.h>
 #include<stdlib.h>
