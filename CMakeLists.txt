@@ -5,6 +5,8 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(array_manager Basics/array_manager.c)
 
+add_executable(sparseMatrix "Sparse Matrix/sparseMatrix.c")
+
 add_executable(fibonacci Basics/fibonacci.c)
 add_executable(matrix_addition Basics/matrix_addition.c)
 add_executable(matrix_multiplication Basics/matrix_multiplication.c)
