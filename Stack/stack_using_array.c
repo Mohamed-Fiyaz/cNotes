@@ -49,9 +49,14 @@ int pop(struct stack *ptr) {
     }
 }
 
-void display(struct stack *ptr) {
-    for(int i = 0; i <= ptr->top; i++) {
-        printf("[%d]: %d\n", i, ptr->arr[i]);
+int peek(struct stack *sp,int i){
+    int arrayInd=sp->top-i+1;
+    if(arrayInd<0){
+        printf("No a valid position for the stack\n");
+        return -1;
+    }
+    else{
+        return sp->arr[arrayInd];
     }
 }
 
@@ -67,13 +72,15 @@ int main() {
     push(sp, 4);
     push(sp, 6);
     push(sp, 8);
-    printf("After pushing: \n");
-    display(sp);
 
     // Pop operation
-    pop(sp);
-    printf("After popping: \n");
-    display(sp);
+    printf("Popped: %d\n", pop(sp));
+    printf("Popped: %d\n", pop(sp));
+
+    // Peek operation used for displaying the stack elements
+    for(int j=1;j<=sp->top+1;j++){
+        printf("The value at position %d is %d\n",j,peek(sp,j));
+    }
 
     return 0;
 }
