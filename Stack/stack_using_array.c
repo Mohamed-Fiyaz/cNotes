@@ -65,9 +65,9 @@ int main() {
     push(sp, 8);
     printf("After pushing: \n");
     display(sp);
-    pop(sp);
 
     // Pop operation
+    pop(sp);
     printf("After popping: \n");
     display(sp);
 
