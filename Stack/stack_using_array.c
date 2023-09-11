@@ -12,7 +12,8 @@ struct stack {
 int isEmpty(struct stack *ptr) {
     if(ptr->top == -1) {
         return 1;
-    } else {
+    }
+    else {
         return 0;
     }
 }
@@ -20,7 +21,8 @@ int isEmpty(struct stack *ptr) {
 int isFull(struct stack *ptr) {
     if(ptr->top == ptr->size - 1) {
         return 1;
-    } else {
+    }
+    else {
         return 0;
     }
 }
@@ -28,7 +30,8 @@ int isFull(struct stack *ptr) {
 void push(struct stack *ptr, int val) {
     if(isFull(ptr)) {
         printf("Stack Overflow!\n");
-    } else {
+    }
+    else {
         ptr->top++;
         ptr->arr[ptr->top]=val;
     }
@@ -38,7 +41,8 @@ int pop(struct stack *ptr) {
     if(isEmpty(ptr)) {
         printf("Stack Underflow!\n");
         return -1;
-    } else {
+    }
+    else {
         int val = ptr->arr[ptr->top];
         ptr->top--;
         return val;
