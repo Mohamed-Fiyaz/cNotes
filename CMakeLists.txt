@@ -29,4 +29,7 @@ add_executable(singlyLinkedList "Linked List/singlyLinkedList.c")
 add_executable(doublyLinkedList "Linked List/doublyLinkedList.c")
 add_executable(circularLinkedList "Linked List/circularLinkedList.c")
 
+add_executable(stack_using_array Stack/stack_using_array.c)
+
+
 

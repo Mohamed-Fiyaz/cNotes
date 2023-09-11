@@ -20,7 +20,7 @@ int main()
                 size++;
 
     // number of columns in compactMatrix (size) must be
-    // equal to number of non - zero elements in
+    // equal to number of non-zero elements in
     // sparseMatrix
     int compactMatrix[3][size];
 
@@ -29,6 +29,7 @@ int main()
     for (int i = 0; i < 4; i++)
         for (int j = 0; j < 5; j++)
             if (sparseMatrix[i][j] != 0)
+
             {
                 compactMatrix[0][k] = i;
                 compactMatrix[1][k] = j;
