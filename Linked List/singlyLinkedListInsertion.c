@@ -1,4 +1,4 @@
-// Singly Linked List and operations
+// Singly linked list and operations
 
 #include<stdio.h>
 #include<stdlib.h>
