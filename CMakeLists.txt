@@ -25,9 +25,11 @@ add_executable(memory_allocation-01 "Dynamic Memory Allocation/memory_allocation
 add_executable(memory_allocation-02 "Dynamic Memory Allocation/memory_allocation-02.c")
 add_executable(memory_allocation-03 "Dynamic Memory Allocation/memory_allocation-03.c")
 
-add_executable(singlyLinkedList "Linked List/singlyLinkedList.c")
+add_executable(singlyLinkedListInsertion "Linked List/singlyLinkedListInsertion.c")
+add_executable(singlyLinkedListDeletion "Linked List/singlyLinkedListDeletion.c")
 add_executable(doublyLinkedList "Linked List/doublyLinkedList.c")
-add_executable(circularLinkedList "Linked List/circularLinkedList.c")
+add_executable(circularLinkedList "Linked List/circularLinkedList.c"
+        "Linked List/singlyLinkedListInsertion.c")
 
 add_executable(stack_using_array Stack/stack_using_array.c)
 
