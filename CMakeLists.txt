@@ -30,6 +30,7 @@ add_executable(singlyLinkedListDeletion "Linked List/singlyLinkedListDeletion.c"
 add_executable(doublyLinkedListInsertion "Linked List/doublyLinkedListInsertion.c")
 add_executable(doublyLinkedListDeletion "Linked List/doublyLinkedListDeletion.c")
 add_executable(circularLinkedList "Linked List/circularLinkedList.c")
+add_executable(cursorBasedImplementaion "Linked List/cursorBasedImplementation.c")
 
 add_executable(stack_using_array Stack/stack_using_array.c)
 
