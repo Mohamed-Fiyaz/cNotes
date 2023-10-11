@@ -5,6 +5,9 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(array_manager Basics/array_manager.c)
 
+add_executable(binaryTree "Binary Tree/binaryTree.c")
+add_executable(order "Binary Tree/order.c")
+
 add_executable(queue Queue/queue.c)
 add_executable(circularQueue Queue/circularQueue.c)
 
