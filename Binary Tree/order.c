@@ -49,7 +49,9 @@ void inOrder(struct node *root){
         inOrder(root->right);
     }
 }
+
 int main(){
+
     // Constructing the root node using functions
     struct node *p=createNode(4);
     struct node *p1=createNode(1);
